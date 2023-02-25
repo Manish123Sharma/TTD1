@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/util.css" type="text/css">
 </head>
 
 <body>
@@ -27,8 +29,13 @@
             <div class="container">
                 <div class="signup-content">
                     <a title="logo" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
-                    <form method="POST" id="signup-form" class="signup-form">
+                    <form method="POST" id="signup-form" class="signup-form" action="index.html">
                         <h2 class="form-title">Create account</h2>
+                        <div class="container" style="padding-top: 10px; padding-bottom: 50px;">
+                            <div class="row">
+                                <div></div>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <input type="text" class="form-input" name="name" id="name" placeholder="Your Name" />
                         </div>
@@ -46,9 +53,16 @@
                             <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                             <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                         </div>
-                        <div class="form-group">
-                            <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up" />
+                        <!-- <a href="index.html"> -->
+                        <div class="container-login100-form-btn">
+                            <div class="wrap-login100-form-btn">
+                                <div class="login100-form-bgbtn"></div>
+                                <button class="login100-form-btn" type="submit">
+                                        SignUp
+                                    </button>
+                            </div>
                         </div>
+                        <!-- </a> -->
                     </form>
                     <p class="loginhere">
                         Have already an account ? <a href="login.html" class="loginhere-link">Login here</a>
